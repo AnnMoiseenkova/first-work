@@ -13,10 +13,43 @@ body {
     font: 16px 'Roboto', sans-serif;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    color: cornflowerblue;
+}
+
+a:visited {
+    color: white;
+}
+
 .hourse {
     width: 200px;
     border-radius: 28px;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 025);
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media (max-width: 700px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.info-text {
+    margin-left: 20px;
 }
 
 .info p {
@@ -39,4 +72,133 @@ body {
 .container {
     width: 75%;
     margin: auto;
+    padding-top: 30px;
 }
+
+/* .border > div {
+    float: left;
+    background: rebeccapurple;
+    height: 200px;
+    border: 4px solid black;
+    width: 25%;
+    box-sizing: border-box;
+} */
+
+.card {
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.bg-yellow {
+    background: #dddd8d;
+}
+.bg-green {
+    background: rgb(45, 116, 57);
+}
+.bg-red {
+    background: rgb(211, 117, 117);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: tomato;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    padding-bottom: 10px;
+}
+
+.table td:nth-child(odd){
+    color: greenyellow;
+}
+
+.link-list {
+    list-style: circle;
+    padding: 0;
+
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact h1 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: blue;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    color: black;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.row > .form-group:last-child {
+    margin-right: 0;
+}
+
+.btn {
+    background: black;
+    padding: 15px 20px;
+    color: white;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9; 
+}
+
+/* .position {
+    position: relative;
+    border: 4px double black;
+    margin-top: 40px;
+    padding: 20px;
+    height: 300px;
+}
+
+.box{
+    width: 20%;
+    left: 0;
+    top: 0;
+    height: 50px;
+    background: lightcoral;
+    position: fixed;
+} */
